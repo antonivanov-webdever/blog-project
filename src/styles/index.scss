@@ -1,0 +1,20 @@
+@import './reset';
+@import "./variables/global";
+@import "./themes/dark";
+@import "./themes/light";
+
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body, #root {
+  height: 100%;
+}
+
+.app {
+  font: var(--font-m);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  height: 100%;
+}
