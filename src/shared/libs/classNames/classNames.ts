@@ -4,7 +4,7 @@ export function classNames(cls: string, mods: Mods, additional: string[]): strin
   return [
     cls,
     ...additional,
-    Object.entries(mods)
+    ...Object.entries(mods)
       .filter(([className, value]) => !!value)
       .map(([className]) => className)
   ].join(' ');
