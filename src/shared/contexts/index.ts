@@ -1,8 +1,8 @@
-import {Theme, ThemeProvider } from "./ThemeContext/ThemeContext";
-import { useTheme } from "./ThemeContext/useTheme";
+import { Theme, ThemeProvider } from './ThemeContext/ThemeContext';
+import { useTheme } from './ThemeContext/useTheme';
 
 export {
-  ThemeProvider,
-  useTheme,
-  Theme
-}
+    ThemeProvider,
+    useTheme,
+    Theme,
+};
