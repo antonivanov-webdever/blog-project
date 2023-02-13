@@ -1,10 +1,10 @@
-import { t } from 'i18next';
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { PageLoader } from 'widgets/PageLoader';
 import { routerConfig } from '../config/routerConfig';
 
 const AppRouter = () => (
-    <Suspense fallback={<div>{t('Загрузка...')}</div>}>
+    <Suspense fallback={<PageLoader />}>
         <div className="page-wrapper">
             <Routes>
                 {Object.values(routerConfig).map(({ element, path }) => (
