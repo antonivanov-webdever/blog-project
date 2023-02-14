@@ -1,7 +1,10 @@
 {
+  "Вызвать ошибку": "Call Error",
   "Домашняя": "Home",
   "Загрузка": "Loading...",
   "Перевести": "Translate",
+  "Перезагрузить": "Reload",
+  "Произошла неожиданная ошибка": "Something went wrong",
   "Страница не найдена": "Page is not found",
   "Тестовый пример": "Testing",
   "Язык": "English"
