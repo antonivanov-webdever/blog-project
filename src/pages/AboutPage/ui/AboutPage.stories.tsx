@@ -3,15 +3,15 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator';
 import { Theme } from 'shared/contexts';
-import AboutPageAsync from './AboutPage.async';
+import AboutPage from './AboutPage';
 
 export default {
     title: 'pages/AboutPage',
-    component: AboutPageAsync,
-} as ComponentMeta<typeof AboutPageAsync>;
+    component: AboutPage,
+} as ComponentMeta<typeof AboutPage>;
 
 const Template:
-  ComponentStory<typeof AboutPageAsync> = (args) => <AboutPageAsync {...args} />;
+  ComponentStory<typeof AboutPage> = (args) => <AboutPage {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
