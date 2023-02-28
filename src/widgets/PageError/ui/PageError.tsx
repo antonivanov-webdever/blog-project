@@ -1,6 +1,6 @@
 import { classNames } from 'shared/libs/classNames/classNames';
-import { t } from 'i18next';
 import { AppButton } from 'shared/ui/AppButton/AppButton';
+import { useTranslation } from 'react-i18next';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
@@ -9,6 +9,7 @@ interface PageErrorProps {
 
 export const PageError = ({ className }: PageErrorProps) => {
     const toHome = () => window.location.reload();
+    const { t } = useTranslation();
 
     return (
         <div className={classNames(cls.PageError, {}, [className])}>

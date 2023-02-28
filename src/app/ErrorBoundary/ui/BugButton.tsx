@@ -1,8 +1,9 @@
 import { AppButton } from 'shared/ui/AppButton/AppButton';
 import { useEffect, useState } from 'react';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 export const BugButton = () => {
+    const { t } = useTranslation();
     const [appError, setAppError] = useState(false);
 
     const setError = () => setAppError(true);

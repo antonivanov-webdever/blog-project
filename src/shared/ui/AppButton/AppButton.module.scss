@@ -7,4 +7,12 @@
     border: none;
     background: none;
     outline: none;
+    color: var(--primary-color);
+}
+
+.outline {
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }

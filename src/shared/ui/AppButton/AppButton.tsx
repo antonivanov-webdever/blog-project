@@ -3,7 +3,8 @@ import { ButtonHTMLAttributes, FC } from 'react';
 import cls from './AppButton.module.scss';
 
 export enum AppButtonTheme {
-  CLEAR = 'clear'
+  CLEAR = 'clear',
+  OUTLINE = 'outline'
 }
 
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
