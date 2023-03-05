@@ -1,5 +1,79 @@
 .AppButton {
     cursor: pointer;
+    padding: 10px 15px;
+}
+
+.outline {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+
+    &.green {
+        border-color: var(--button-green);
+        color: var(--button-green);
+    }
+
+    &.purple {
+        border-color: var(--button-purple);
+        color: var(--button-purple);
+    }
+}
+
+.fill {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--background-color);
+
+    &.green {
+        background-color: var(--button-green);
+        border-color: var(--button-green);
+        color: var(--button-green-text);
+    }
+
+    &.purple {
+        background-color: var(--button-purple);
+        border-color: var(--button-purple);
+        color: var(--button-purple-text);
+    }
+}
+
+.square {
+    padding: 0;
+
+    &.size_m {
+        width: var(--line-height-m);
+        height: var(--line-height-m);
+        font-size: var(--font-size-m);
+    }
+
+    &.size_l {
+        width: var(--line-height-l);
+        height: var(--line-height-l);
+        font-size: var(--font-size-l);
+    }
+
+    &.size_xl {
+        width: var(--line-height-xl);
+        height: var(--line-height-xl);
+        font-size: var(--font-size-xl);
+    }
+}
+
+.rect {
+    &.size_m {
+        padding: 8px 12px;
+        font-size: var(--font-size-m);
+    }
+
+    &.size_l {
+        padding: 10px 16px;
+        font-size: var(--font-size-l);
+    }
+
+    &.size_xl {
+        padding: 14px 22px;
+        font-size: var(--font-size-xl);
+    }
 }
 
 .clear {
@@ -8,11 +82,10 @@
     background: none;
     outline: none;
     color: var(--primary-color);
-}
 
-.outline {
-    padding: 10px 15px;
-    background: none;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    &.size_m,
+    &.size_l,
+    &.size_xl {
+        padding: 0;
+    }
 }
