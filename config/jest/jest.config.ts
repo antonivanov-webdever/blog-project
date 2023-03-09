@@ -45,6 +45,7 @@ export default {
     moduleNameMapper: {
         '\\.s?css$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        '\\.(jpg|ico|jpeg|png)$': path.resolve(__dirname, 'jestFileMock.ts'),
     },
 
     // testPathIgnorePatterns: [
