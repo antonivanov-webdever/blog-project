@@ -64,5 +64,7 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/macos,phpstorm
 
 /build
-node_modules
+/node_modules
 /storybook-static
+/.loki/report.html
+/.loki/report.json
