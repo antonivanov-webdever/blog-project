@@ -81,7 +81,14 @@
     border: none;
     background: none;
     outline: none;
-    color: var(--primary-color);
+
+    &.green {
+        color: var(--button-green);
+    }
+
+    &.purple {
+        color: var(--button-purple);
+    }
 
     &.size_m,
     &.size_l,
