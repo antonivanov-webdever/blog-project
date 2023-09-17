@@ -9,5 +9,7 @@
   "Страница не найдена": "Page is not found",
   "Тестовый пример": "Testing",
   "Язык": "English",
-  "Войти" : "Sign in"
+  "Войти" : "Sign in",
+  "Добавить": "Increment",
+  "Убавить": "Decrement"
 }

@@ -1,14 +1,15 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { componentRender } from 'shared/libs/tests/componentRender/componentRender';
 import { AppButton } from './AppButton';
 
 describe('AppButton component', () => {
     it('should defined', () => {
-        render(<AppButton>TEST</AppButton>);
+        componentRender(<AppButton>TEST</AppButton>);
         expect(screen.getByText('TEST')).toBeInTheDocument();
     });
 
     it('should contain a theme class name when theme is passed', () => {
-        render(<AppButton variant="clear">TEST</AppButton>);
+        componentRender(<AppButton variant="clear">TEST</AppButton>);
         expect(screen.getByText('TEST')).toHaveClass('clear');
     });
 });
