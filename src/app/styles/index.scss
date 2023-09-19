@@ -8,15 +8,18 @@ html {
     height: 100vh;
 }
 
+body {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
+
 body,
 #root {
     height: 100%;
-    font: var(--font-m);
 }
 
 .app {
     background-color: var(--background-color);
-    color: var(--primary-color);
     height: 100%;
 }
 
